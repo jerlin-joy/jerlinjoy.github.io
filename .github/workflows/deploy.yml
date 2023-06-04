@@ -25,9 +25,9 @@ jobs:
       - name: Build Making
         run: npm run build --if-present
       - name: Deploy to GitHub packages
-        uses: crazy-max/ghaction-github-pages@v1
+        uses: crazy-max/ghaction-github-pages@v3
         with:
          target_branch: gh-pages
          build_dir: build
         env:
-         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}\
+         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
